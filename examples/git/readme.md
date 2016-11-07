@@ -33,7 +33,7 @@ Doing this breaks up gits large packfile into all of its individual objects.
 This will allow ipfs to deduplicate objects if you add multiple versions of
 this git repository.
 
-Once youve done that, that repo is ready to be served. All thats left to do, is
+Once you've done that, that repo is ready to be served. All that's left to do, is
 to add it to ipfs:
 ```
 $ pwd
@@ -45,7 +45,7 @@ $ ipfs add -r .
 added QmX679gmfyaRkKMvPA4WGNWXj9PtpvKWGPgtXaF18etC95 .
 ```
 
-Now, all thats left is to try cloning it:
+Now, all that's left is to try cloning it:
 ```
 $ cd /tmp
 $ git clone http://localhost:8080/ipfs/QmX679gmfyaRkKMvPA4WGNWXj9PtpvKWGPgtXaF18etC95 myrepo
@@ -74,7 +74,7 @@ import (
 
 And you will be guaranteed to have the same code every time!
 
-Note: Since go doesnt allow the usage of localhost for import paths, we use the
+Note: Since go doesn't allow the usage of localhost for import paths, we use the
 public http gateways. This provides no security guarantees as a man in the
 middle attack could ship you bad code. You could use a domain name that redirects
 to the localhost instead to avoid the issue.
